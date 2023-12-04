@@ -34,7 +34,7 @@ def extract_num(img_filename):
         if (read in known_plates):
             print("pass")
         else:
-            print("your number is no in database")
+            print("your number is not in database")
 
         cv2.rectangle(img,(x,y),(x+w,y+h),(51,51,255),2)
         cv2.rectangle(img,(x-1,y-40),(x+w+1,y),(51,51,255),-1)
@@ -47,4 +47,4 @@ def extract_num(img_filename):
     #     exit()
     # cv2.destroyAllWindows()
 
-extract_num("images/car1.jpeg")
+extract_num("car1.jpeg")
